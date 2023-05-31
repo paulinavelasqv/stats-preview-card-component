@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: .5rem;
+    width: 1000px;
+    height: 400px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+}
+
+.image{
+    background: linear-gradient(0deg, hsla(277, 55%, 40%, 0.5) 0%, hsla(277, 55%, 30%, 0.5) 100%), url(../images/image-header-desktop.jpg);
+    width: 100%;
+}
+
+/* .image{
+    width: 100%;
+} */
+
+/* .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 .5rem .5rem 0;
+    object-fit: cover;
+} */
+
+.text{
+    width: 100%;
+    padding: 4rem;
+}
+
+.text h1{
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.text span{
+    color: hsl(277, 64%, 61%);
+}
+
+.text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.stats{
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stats h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.stats span{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 550px) {
+    .card{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 90vw;
+        height: 110vh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .image{
+        height: 100%;
+        width: 100%;
+    }
+    .text{
+        width: auto;
+        height: 70%;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .stats{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
